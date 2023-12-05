@@ -10,5 +10,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'todoapp';
+  title = 'My App';
+  list = ['cafe','azucar', 'leche', 'agua']
 }
