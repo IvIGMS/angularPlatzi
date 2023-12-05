@@ -23,38 +23,15 @@
             </div>
             <input class="edit" value="Learn JavaScript" />
           </li>
-          <li>
+          <li *ngFor="let item of list">
             <div class="view">
               <input class="toggle" type="checkbox" />
-              <label>Make endpoints</label>
+              <label>{{ item}}</label>
               <button class="destroy"></button>
             </div>
             <input class="edit" value="Buy a unicorn" />
           </li>
-          <li>
-            <div class="view">
-              <input class="toggle" type="checkbox" />
-              <label>Deploy the project</label>
-              <button class="destroy"></button>
-            </div>
-            <input class="edit" value="Buy a unicorn" />
-          </li>
-          <li>
-            <div class="view">
-              <input class="toggle" type="checkbox" />
-              <label>Encrypt passwords</label>
-              <button class="destroy"></button>
-            </div>
-            <input class="edit" value="Buy a unicorn" />
-          </li>
-          <li class="editing">
-            <div class="view">
-              <input class="toggle" type="checkbox" />
-              <label>Make dishes</label>
-              <button class="destroy"></button>
-            </div>
-            <input class="edit" value="Make dishes" />
-          </li>
+          
         </ul>
       </section>
       <!-- This footer should be hidden by default and shown when there are todos -->

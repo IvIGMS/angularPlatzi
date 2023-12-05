@@ -1,20 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
-</head>
-<body>
+<div class="container">
   <h1>App: {{ title }}</h1>
-  <h2>Lista de la compra</h2>
+<h2>Lista de la compra</h2>
 
-  <ul>
-    <li *ngFor="let item of list">
-        {{ item }}
-    </li>
-  </ul>
-  
-<p> Final del programa </p>
-</body>
-</html>
+<ul>
+  <li *ngFor="let item of list">
+       {{ item }}
+  </li>
+</ul>
+<!-- De esta forma le podemos pasar propiedades a las etiquetas que se abren y cierran en la misma linea {{ }} -->
+<input type="text" [value]="name" style="color: gray;">
+<img [src]="img" alt="oso pardo">
+
+<!-- Ahora vamos a trabajar con objetos [ ] -->
+<p>{{ person.name }}</p>
+<p>{{ person.age }}</p>
+<p>{{ person.genre }}</p>
+
+<!-- Ahora vamos a manejar eventos de click ( ) -->
+<button (click)="clickHandler()">click me</button>
+<button (dblclick)="clickHandler()">double me</button>
+
+<input type="text" [value]="person.name" style="color: red;" (change)="changeHandler($event)">
+
+</div>

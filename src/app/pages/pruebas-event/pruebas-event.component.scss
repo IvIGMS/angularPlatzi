@@ -1,0 +1,19 @@
+.container {
+    display: block;
+    width: 20rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    background-color: lightblue;
+    border-radius: 1rem;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section  {
+    width: 100%;
+}
